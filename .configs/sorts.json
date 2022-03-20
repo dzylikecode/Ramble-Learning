@@ -1,8 +1,14 @@
 {
   "__positions" : {
-
+    "web" : 1,
+    "git" : 2
   },
   "__raw_positions" : {
-
-  }
+    "web" : 1,
+    "git" : 2
+  },
+  "" : [
+    "web",
+    "git"
+  ]
 }
