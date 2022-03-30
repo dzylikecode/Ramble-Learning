@@ -3,9 +3,7 @@
 
 .Archive/
 .markeditor/
-!.metion/
-.metion/*
-!.metion/*_sort.config
+.metion/
 .markdown/
 .sync/
 .idea/
