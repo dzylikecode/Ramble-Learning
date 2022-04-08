@@ -7,8 +7,21 @@ date: 2022-04-03 20:49
 `git remote add <remote_name> <url_address>`
 
 > eg. `git remote add origin git@github.com:username/repository.git`
+
+## show
+
+- `git remote show`
+
 ## delete remote repository
 - `git remote remove <repository_name>`
+
+## 重定向
+- `git remote set-url origin <new_url>`
+
+## rename
+
+- `git remote rename <old_name> <new_name>`
+
 ## 推送至远程仓库
 
 `git push -u origin master`

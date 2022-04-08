@@ -92,10 +92,36 @@ getElementsByTagName()获取的是多个元素（即集合），而getElementByI
 
 oLi[i].innerHTML = arr[i];表示设置li元素中的内容为对应下标的数组arr中的元素。
 
+
+## getElementById()和getElementsByTagName()这两个方法的一些重要区别
+
+- getElementsByTagName()可以操作动态创建的DOM
+
+```html
+<!DOCTYPE html> <html> <head>     <meta charset="utf-8" />     <title></title>     <script>         window.onload = function ()         {                 document.body.innerHTML = "<input type='button' value='按 钮'/><input type='button' value='按钮'/><input type='button' value='按钮'/>"             var oBtn = document.getElementsByTagName("input");              oBtn[0].onclick = function ()             {                 alert("表单元素共有：" + oBtn.length + "个");             };         }     </script> </head> <body> </body> </html>
+```
  
+- 按下第一个按钮显示
 
+![](./_image/2022-04-05/99b26fdc529c4a08c8d239188b6d65b6.jpg)
 
+- getElementById()不可以操作动态创建的DOM
 
+```html
+<!DOCTYPE html> <html> <head>     <meta charset="utf-8" />     <title></title>     <script>         window.onload = function ()         {                 document.body.innerHTML = "<input id='btn' type='button' value='按钮'/><input type='button' value='按钮'/><input type='button' value='按钮'/>"             var oBtn = document.getElementById("btn");              oBtn.onclick = function ()             {                 alert("表单元素共有：" + oBtn.length + "个");             };         }     </script> </head> <body> </body> </html>
+```
+
+- 按下第一个按钮
+
+![](./_image/2022-04-05/abae7de4746e902638ea23f8cb1292fa.jpg)
+
+>-  getElementById()获取的是一个元素，而getElementsByTagName()获取的是多个元素（伪数组）。
+>-  getElementById()前面只可以接document，也就是document.getElement ById()；getElementsByTagName()前面不仅可以接document，还可以接其他DOM对象。
+>-  getElementById()不可以操作动态创建的DOM元素，而getElementsBy TagName()可以操作动态创建的DOM元素。
+
+### getElementsByClassName()
+
+ 
 
 
 
