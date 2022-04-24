@@ -122,10 +122,14 @@ oLi[i].innerHTML = arr[i];表示设置li元素中的内容为对应下标的数�
 ### getElementsByClassName()
 
  
+A.appendChild(B)表示把B插入到A内部中去，也就是使得B成为A的子节点。
+
+![](./_image/2022-04-17/5af7d74311997c7ba35af1bfa48d79d8.jpg)
 
 
 
 
+https://uploads.disquscdn.com/images/5f13c88895d5d4c31e7298c5ea7e37237399e23d2add516bd6d6742987524c8e.png
 
 
 
